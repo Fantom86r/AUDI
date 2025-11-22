@@ -1,0 +1,220 @@
+/* Сброс стандартных отступов и полей для всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Основной контейнер с ограничением максимальной ширины и центрированием */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Верхняя секция с фото и информацией */
+.top-section {
+  display: flex; /* Flex-раскладка для расположения элементов в строку */
+  gap: 30px; /* Расстояние между дочерними элементами */
+  padding: 30px 0; /* Внутренние отступы сверху и снизу */
+}
+
+/* Стили для фотографии */
+.photo {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%; /* Круглая форма фотографии */
+}
+
+/* Секция с персональной информацией */
+.personal-info {
+  flex-grow: 1; /* Занимает все доступное пространство */
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов */
+  justify-content: center; /* Центрирование по вертикали */
+  gap: 5px; /* Расстояние между элементами */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Секция с контактной информацией */
+.contact-info {
+  display: flex;
+  gap: 5px;
+  flex-direction: column; /* Вертикальное расположение элементов */
+  justify-content: center; /* Центрирование по вертикали */
+  align-items: flex-end; /* Выравнивание элементов по правому краю */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Блок с описанием */
+.description {
+  margin-top: 20px; /* Отступ сверху */
+}
+
+/* Контейнер для блоков интересов и соцсетей */
+.content-block {
+  margin-top: 40px; /* Отступ сверху */
+  display: grid; /* Grid-раскладка */
+  grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
+}
+
+/* Блок интересов */
+.interests {
+  border: 1px solid #008000; /* Зеленая рамка */
+  border-radius: 10px 0 0 10px; /* Скругление углов: левые верхний и нижний */
+}
+
+/* Заголовок блока */
+.block-title {
+  border-bottom: 1px solid green; /* Зеленая линия под заголовком */
+  text-align: center; /* Центрирование текста */
+  color: green; /* Зеленый цвет текста */
+  padding: 5px 0; /* Внутренние отступы сверху и снизу */
+  font-weight: bold; /* Жирное начертание */
+}
+
+/* Блок социальных сетей */
+.networks {
+  border: 1px solid #008000; /* Зеленая рамка */
+  border-radius: 0 10px 10px 0; /* Скругление углов: правые верхний и нижний */
+}
+
+/* Контейнер для элементов списка */
+.items {
+  width: fit-content; /* Ширина по содержимому */
+  text-align: center; /* Центрирование текста */
+  justify-content: center; /* Центрирование по горизонтали */
+  margin: 0 auto; /* Центрирование блока */
+}
+
+/* Внутреннее содержимое блоков */
+.block-content {
+  padding: 15px; /* Внутренние отступы */
+}
+
+/* Эффект при наведении на элемент */
+.item:hover {
+  cursor: pointer; /* Изменение курсора */
+  color: green; /* Изменение цвета текста */
+}
+
+/* Стили для ссылок внутри элементов */
+.item > a {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: black; /* Черный цвет текста */
+}
+
+/* Отдельный элемент */
+.item {
+  text-align: left; /* Выравнивание текста по левому краю */
+}
+
+/* Заголовок секции */
+.section-title {
+  background: rgb(20, 150, 20); /* Зеленый фон */
+  border-radius: 10px; /* Скругленные углы */
+  text-align: center; /* Центрирование текста */
+  color: white; /* Белый цвет текста */
+  padding: 5px 0; /* Внутренние отступы сверху и снизу */
+  margin-top: 50px; /* Отступ сверху */
+}
+
+/* Заголовок формы */
+.form-title {
+  background: rgb(20, 150, 20); /* Зеленый фон */
+  border-radius: 10px; /* Скругленные углы */
+  text-align: center; /* Центрирование текста */
+  color: white; /* Белый цвет текста */
+  padding: 5px 0; /* Внутренние отступы сверху и снизу */
+  margin-top: 50px; /* Отступ сверху */
+}
+
+/* Контейнер для работ/проектов */
+.works-container {
+  display: flex; /* Flex-раскладка */
+  justify-content: space-between; /* Равномерное распределение с пространством между */
+  margin-top: 20px; /* Отступ сверху */
+}
+
+/* Изображение работы/проекта */
+.work-image {
+  width: 105px;
+  height: 105px;
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов */
+  gap: 10px; /* Расстояние между элементами */
+  align-items: center; /* Центрирование по горизонтали */
+  padding: 20px; /* Внутренние отступы */
+}
+
+/* Эффект при наведении на элемент работы */
+.work-item:hover {
+  box-shadow: 0 4px 20px 0 #5a9645; /* Тень при наведении */
+  cursor: pointer; /* Изменение курсора */
+  transition: all 0.2s ease-in-out; /* Плавный переход */
+  border-radius: 10%; /* Скругление углов */
+}
+
+/* Подпись к изображению */
+.caption {
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+}
+
+/* Контейнер формы */
+.form-container {
+  display: grid; /* Grid-раскладка */
+  grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
+  flex-wrap: wrap; /* Перенос на новую строку при необходимости */
+  gap: 15px; /* Расстояние между элементами */
+}
+
+/* Поле для ввода имени */
+.field-name {
+  border-radius: 5px; /* Скругленные углы */
+  height: 35px; /* Высота поля */
+  padding: 0 10px; /* Внутренние отступы слева и справа */
+  border: 1px solid #ccc; /* Серая рамка */
+  margin-top: 15px; /* Отступ сверху */
+}
+
+/* Поле для ввода телефона */
+.field-phone {
+  height: 35px; /* Высота поля */
+  border-radius: 5px; /* Скругленные углы */
+  padding: 0 10px; /* Внутренние отступы слева и справа */
+  border: 1px solid #ccc; /* Серая рамка */
+  margin-top: 15px; /* Отступ сверху */
+  margin-left: 59; /* Отступ слева (возможно опечатка, должно быть 59px) */
+}
+
+/* Поле для ввода текста (сообщения) */
+.field-text {
+  grid-column-start: 1; /* Начало в первой колонке */
+  grid-column-end: 3; /* Конец в третьей колонке (занимает две колонки) */
+  height: 100px; /* Высота поля */
+  border-radius: 5px; /* Скругленные углы */
+  padding: 10px; /* Внутренние отступы */
+  border: 1px solid #ccc; /* Серая рамка */
+}
+
+/* Кнопка отправки */
+.btn {
+  display: flex;
+  margin: 0 auto; /* Центрирование по горизонтали */
+  background: rgb(20, 150, 20); /* Зеленый фон */
+  border-radius: 5px; /* Скругленные углы */
+  align-items: center; /* Центрирование по вертикали */
+  justify-content: center; /* Центрирование по горизонтали */
+  color: white; /* Белый цвет текста */
+  margin-top: 30px; /* Отступ сверху */
+  width: 125px; /* Ширина кнопки */
+  height: 33px; /* Высота кнопки */
+  position: 50%; /* Некорректное значение (должно быть absolute/relative/fixed с координатами) */
+  margin: 0 auto; /* Центрирование по горизонтали */
+  border: 1px solid #ccc; /* Серая рамка */
+  cursor: pointer; /* Изменение курсора при наведении */
+}
+
+/* Обертка для кнопки */
+.btn-wrapper {
+  margin-top: 10px; /* Отступ сверху */
+}

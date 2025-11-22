@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru"> <!-- Устанавливаем язык страницы -->
+<head>
+    <meta charset="UTF-8"> <!-- Кодировка символов -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Адаптивность -->
+    <link rel="stylesheet" href="style.css"> <!-- Подключаем CSS -->
+    <title>Мое Портфолио</title> <!-- Заголовок вкладки -->
+</head>
+<body>
+    <div class="container"> <!-- Основной контейнер -->
+        <div class="top-section"> <!-- Верхняя секция с фото и контактами -->
+            <img class="photo" src="photo.jpg" alt="Мое фото"> <!-- Фото пользователя -->
+            <div class="personal-info"> <!-- Блок с именем и профессией -->
+                <h1 class="name">Амир Насибуллинг</h1> <!-- Имя -->
+                <p class="role">Frontend developer</p> <!-- Профессия -->
+            </div>
+            <div class="contact-info"> <!-- Блок с контактами -->
+                <h2 class="heading">Контакты</h2> <!-- Заголовок контактов -->
+                <span class="contact">+77777777777</span> <!-- Телефон -->
+                <span class="contact">AudiA5@mail.com</span> <!-- Email -->
+            </div>
+        </div>
+        <hr> <!-- Горизонтальная линия -->
+        <p class="description"> <!-- Блок описания -->
+            <b>Audi A5</b> — серия компактных автомобилей представительского класса и купе класса «гран-туризмо», выпускаемых немецким автопроизводителем Audi с июня 2007 года. В линейку A5 также входят купе, кабриолет и «Sportback» — пятидверный лифтбек с линией крыши фастбэк, созданный на базе Audi A4 седана и универсала. <!-- Текст описания -->
+        </p>
+        <div class="content-block"> <!-- Блок с хобби и соцсетями -->
+            <div class="interests"> <!-- Блок хобби -->
+                <div class="block-title">Мои увлечения</div> <!-- Заголовок хобби -->
+                <div class="block-content"> <!-- Контент хобби -->
+                    <ul class="items"> <!-- Список хобби -->
+                        <li class="item">Спать</li> <!-- Элемент списка -->
+                        <li class="item">Путешествия</li>
+                        <li class="item">Играть</li>
+                        <li class="item">Качалочка</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="networks"> <!-- Блок соцсетей -->
+                <div class="block-title">Соцсети</div> <!-- Заголовок соцсетей -->
+                <div class="block-content"> <!-- Контент соцсетей -->
+                    <ol class="items"> <!-- Нумерованный список соцсетей -->
+                        <li class="item"><a href="http://vk.ru">VK</a></li> <!-- Ссылка на соцсеть -->
+                        <li class="item"><a href="https://www.facebook.com"></a>Facebook</li>
+                        <li class="item">TG</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class='section-title'>Примеры работ</div> <!-- Заголовок секции работ -->
+
+        <div class='works-container'> <!-- Контейнер для работ -->
+            <div class='work-item'> <!-- Один элемент работы -->
+                <img class='work-image' src='audi.png'></img> <!-- Изображение работы -->
+                <span class='caption'>Audi</span> <!-- Подпись к изображению -->
+            </div>
+            <!-- Повторяющиеся блоки работ -->
+            <div class='work-item'>
+                <img class='work-image' src='audi.png'></img>
+                <span class='caption'>Audi</span>
+            </div>
+            <div class='work-item'>
+                <img class='work-image' src='audi.png'></img>
+                <span class='caption'>Audi</span>
+            </div>
+            <div class='work-item'>
+                <img class='work-image' src='audi.png'></img>
+                <span class='caption'>Audi</span>
+            </div>
+        </div>
+
+        <div class='form-title'>Написать мне</div> <!-- Заголовок формы -->
+
+        <div class='form-container'> <!-- Контейнер формы -->
+            <input class='field-name' type='text' placeholder='Ваше имя'> <!-- Поле имени -->
+            <input class='field-phone' type='number' placeholder='Телефон'> <!-- Поле телефона -->
+            <textarea placeholder="Ваш вопрос" rows="5" class="field-text"></textarea> <!-- Поле вопроса -->
+        </div>
+        <div class='btn-wrapper'><button class='btn'>Отправить</button></div> <!-- Кнопка отправки -->
+        <br> <!-- Перенос строки -->
+    </div>
+</body>
+</html>
